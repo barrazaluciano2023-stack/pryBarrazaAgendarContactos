@@ -39,16 +39,18 @@
             lblFyH = new Label();
             lblTitulo = new Label();
             lstResultados = new RichTextBox();
+            btnVerContactos = new Button();
             SuspendLayout();
             // 
             // txtNumero
             // 
             txtNumero.Enabled = false;
             txtNumero.Font = new Font("Segoe UI", 14.25F);
-            txtNumero.Location = new Point(187, 133);
+            txtNumero.Location = new Point(214, 177);
+            txtNumero.Margin = new Padding(3, 4, 3, 4);
             txtNumero.Mask = "(999)000-0000";
             txtNumero.Name = "txtNumero";
-            txtNumero.Size = new Size(292, 33);
+            txtNumero.Size = new Size(333, 39);
             txtNumero.TabIndex = 2;
             txtNumero.TextChanged += txtNumero_TextChanged;
             // 
@@ -56,9 +58,9 @@
             // 
             lblContacto.AutoSize = true;
             lblContacto.Font = new Font("Segoe UI", 14.25F);
-            lblContacto.Location = new Point(59, 79);
+            lblContacto.Location = new Point(67, 105);
             lblContacto.Name = "lblContacto";
-            lblContacto.Size = new Size(88, 25);
+            lblContacto.Size = new Size(110, 32);
             lblContacto.TabIndex = 1;
             lblContacto.Text = "Contacto";
             // 
@@ -66,18 +68,19 @@
             // 
             lblNumero.AutoSize = true;
             lblNumero.Font = new Font("Segoe UI", 14.25F);
-            lblNumero.Location = new Point(59, 141);
+            lblNumero.Location = new Point(67, 188);
             lblNumero.Name = "lblNumero";
-            lblNumero.Size = new Size(81, 25);
+            lblNumero.Size = new Size(102, 32);
             lblNumero.TabIndex = 2;
             lblNumero.Text = "Numero";
             // 
             // txtContacto
             // 
             txtContacto.Font = new Font("Segoe UI", 14.25F);
-            txtContacto.Location = new Point(187, 79);
+            txtContacto.Location = new Point(214, 105);
+            txtContacto.Margin = new Padding(3, 4, 3, 4);
             txtContacto.Name = "txtContacto";
-            txtContacto.Size = new Size(292, 33);
+            txtContacto.Size = new Size(333, 39);
             txtContacto.TabIndex = 1;
             txtContacto.TextChanged += txtContacto_TextChanged;
             // 
@@ -85,20 +88,22 @@
             // 
             btnAgendar.Enabled = false;
             btnAgendar.Font = new Font("Segoe UI", 12F);
-            btnAgendar.Location = new Point(343, 217);
+            btnAgendar.Location = new Point(496, 289);
+            btnAgendar.Margin = new Padding(3, 4, 3, 4);
             btnAgendar.Name = "btnAgendar";
-            btnAgendar.Size = new Size(87, 29);
+            btnAgendar.Size = new Size(113, 39);
             btnAgendar.TabIndex = 3;
             btnAgendar.Text = "Aceptar";
             btnAgendar.UseVisualStyleBackColor = true;
-            btnAgendar.TextChanged += btnAgendar_TextChanged;
+            btnAgendar.Click += btnAgendar_Click;
             // 
             // btnCancelar
             // 
             btnCancelar.Font = new Font("Segoe UI", 12F);
-            btnCancelar.Location = new Point(199, 217);
+            btnCancelar.Location = new Point(138, 289);
+            btnCancelar.Margin = new Padding(3, 4, 3, 4);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(88, 29);
+            btnCancelar.Size = new Size(113, 39);
             btnCancelar.TabIndex = 4;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -106,18 +111,18 @@
             // lblCantidadContactos
             // 
             lblCantidadContactos.AutoSize = true;
-            lblCantidadContactos.Location = new Point(31, 426);
+            lblCantidadContactos.Location = new Point(35, 568);
             lblCantidadContactos.Name = "lblCantidadContactos";
-            lblCantidadContactos.Size = new Size(131, 15);
+            lblCantidadContactos.Size = new Size(163, 20);
             lblCantidadContactos.TabIndex = 7;
             lblCantidadContactos.Text = "Cantidad de Contactos:";
             // 
             // lblFyH
             // 
             lblFyH.AutoSize = true;
-            lblFyH.Location = new Point(612, 426);
+            lblFyH.Location = new Point(699, 568);
             lblFyH.Name = "lblFyH";
-            lblFyH.Size = new Size(76, 15);
+            lblFyH.Size = new Size(95, 20);
             lblFyH.TabIndex = 8;
             lblFyH.Text = "Fecha y Hora";
             // 
@@ -125,9 +130,9 @@
             // 
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTitulo.Location = new Point(170, 9);
+            lblTitulo.Location = new Point(194, 12);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(403, 29);
+            lblTitulo.Size = new Size(512, 36);
             lblTitulo.TabIndex = 9;
             lblTitulo.Text = "Gestion de Agenda de Contactos";
             // 
@@ -135,17 +140,31 @@
             // 
             lstResultados.DetectUrls = false;
             lstResultados.ForeColor = SystemColors.WindowText;
-            lstResultados.Location = new Point(170, 280);
+            lstResultados.Location = new Point(194, 373);
+            lstResultados.Margin = new Padding(3, 4, 3, 4);
             lstResultados.Name = "lstResultados";
-            lstResultados.Size = new Size(318, 96);
+            lstResultados.Size = new Size(363, 127);
             lstResultados.TabIndex = 5;
             lstResultados.Text = "";
             // 
+            // btnVerContactos
+            // 
+            btnVerContactos.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnVerContactos.Location = new Point(284, 291);
+            btnVerContactos.Margin = new Padding(3, 4, 3, 4);
+            btnVerContactos.Name = "btnVerContactos";
+            btnVerContactos.Size = new Size(165, 39);
+            btnVerContactos.TabIndex = 10;
+            btnVerContactos.Text = "Ver Contactos";
+            btnVerContactos.UseVisualStyleBackColor = true;
+            btnVerContactos.Click += btnVerContactos_Click;
+            // 
             // frmAgendaContactos
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
+            Controls.Add(btnVerContactos);
             Controls.Add(lblTitulo);
             Controls.Add(lblFyH);
             Controls.Add(lblCantidadContactos);
@@ -157,6 +176,7 @@
             Controls.Add(lblContacto);
             Controls.Add(txtNumero);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmAgendaContactos";
             Text = "1";
             Load += frmAgendaContactos_Load;
@@ -176,5 +196,6 @@
         private Label lblFyH;
         private Label lblTitulo;
         private RichTextBox lstResultados;
+        private Button btnVerContactos;
     }
 }

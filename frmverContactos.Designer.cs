@@ -1,0 +1,85 @@
+﻿namespace pryBarrazaAgendarContactos
+{
+    partial class frmverContactos
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            lblDatosContactos = new Label();
+            btnSiguiente = new Button();
+            btnAnterior = new Button();
+            SuspendLayout();
+            // 
+            // lblDatosContactos
+            // 
+            lblDatosContactos.Location = new Point(173, 52);
+            lblDatosContactos.Name = "lblDatosContactos";
+            lblDatosContactos.Size = new Size(434, 238);
+            lblDatosContactos.TabIndex = 0;
+            lblDatosContactos.Text = "label1";
+            lblDatosContactos.Click += lblDatosContactos_Click;
+            // 
+            // btnSiguiente
+            // 
+            btnSiguiente.Location = new Point(464, 352);
+            btnSiguiente.Name = "btnSiguiente";
+            btnSiguiente.Size = new Size(143, 63);
+            btnSiguiente.TabIndex = 1;
+            btnSiguiente.Text = "Siguiente";
+            btnSiguiente.UseVisualStyleBackColor = true;
+            btnSiguiente.Click += btnSiguiente_Click;
+            // 
+            // btnAnterior
+            // 
+            btnAnterior.Enabled = false;
+            btnAnterior.Location = new Point(173, 352);
+            btnAnterior.Name = "btnAnterior";
+            btnAnterior.Size = new Size(158, 63);
+            btnAnterior.TabIndex = 2;
+            btnAnterior.Text = "Anterior";
+            btnAnterior.UseVisualStyleBackColor = true;
+            btnAnterior.Click += btnAnterior_Click;
+            // 
+            // frmverContactos
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnAnterior);
+            Controls.Add(btnSiguiente);
+            Controls.Add(lblDatosContactos);
+            Name = "frmverContactos";
+            Text = "frmverContactos";
+            ResumeLayout(false);
+        }
+
+        #endregion
+
+        private Label lblDatosContactos;
+        private Button btnSiguiente;
+        private Button btnAnterior;
+    }
+}
