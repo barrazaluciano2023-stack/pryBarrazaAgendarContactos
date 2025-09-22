@@ -35,18 +35,20 @@
             // 
             // lblDatosContactos
             // 
-            lblDatosContactos.Location = new Point(173, 52);
+            lblDatosContactos.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblDatosContactos.Location = new Point(151, 39);
             lblDatosContactos.Name = "lblDatosContactos";
-            lblDatosContactos.Size = new Size(434, 238);
+            lblDatosContactos.Size = new Size(380, 178);
             lblDatosContactos.TabIndex = 0;
             lblDatosContactos.Text = "label1";
             lblDatosContactos.Click += lblDatosContactos_Click;
             // 
             // btnSiguiente
             // 
-            btnSiguiente.Location = new Point(464, 352);
+            btnSiguiente.Location = new Point(406, 264);
+            btnSiguiente.Margin = new Padding(3, 2, 3, 2);
             btnSiguiente.Name = "btnSiguiente";
-            btnSiguiente.Size = new Size(143, 63);
+            btnSiguiente.Size = new Size(125, 47);
             btnSiguiente.TabIndex = 1;
             btnSiguiente.Text = "Siguiente";
             btnSiguiente.UseVisualStyleBackColor = true;
@@ -55,9 +57,10 @@
             // btnAnterior
             // 
             btnAnterior.Enabled = false;
-            btnAnterior.Location = new Point(173, 352);
+            btnAnterior.Location = new Point(151, 264);
+            btnAnterior.Margin = new Padding(3, 2, 3, 2);
             btnAnterior.Name = "btnAnterior";
-            btnAnterior.Size = new Size(158, 63);
+            btnAnterior.Size = new Size(138, 47);
             btnAnterior.TabIndex = 2;
             btnAnterior.Text = "Anterior";
             btnAnterior.UseVisualStyleBackColor = true;
@@ -65,12 +68,13 @@
             // 
             // frmverContactos
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(btnAnterior);
             Controls.Add(btnSiguiente);
             Controls.Add(lblDatosContactos);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmverContactos";
             Text = "frmverContactos";
             ResumeLayout(false);

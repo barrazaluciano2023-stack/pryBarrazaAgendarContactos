@@ -70,6 +70,8 @@ namespace pryBarrazaAgendarContactos
             //Limpiar Controles
             txtContacto.Text = "";
             txtNumero.Text = "";
+            btnAgendar.Enabled = false;
+            txtContacto.Focus();
             if (indice == 5)
             {
                 btnAgendar.Enabled = false;

@@ -23,7 +23,7 @@ namespace pryBarrazaAgendarContactos
             InitializeComponent();
             vecNombresLocal = Vecnombres;
             vecNumerosLocal = vecNumeros;
-            lblDatosContactos.Text = "Nombre: " + vecNombresLocal[0] + " Numero: " + vecNumerosLocal[0];
+            lblDatosContactos.Text = "Nombre: " + vecNombresLocal[0] + "\n" + "Numero: " + vecNumerosLocal[0];
         }
 
 
@@ -35,7 +35,7 @@ namespace pryBarrazaAgendarContactos
                 btnSiguiente.Enabled = true;
                 btnAnterior.Enabled = true;
                 indice++;
-                lblDatosContactos.Text = "Nombre: " + vecNombresLocal[indice] + " Numero: " + vecNumerosLocal[indice];
+                lblDatosContactos.Text = "Nombre: " + vecNombresLocal[indice]+ "\n" + "Numero: " + vecNumerosLocal[indice];
                 break;
             }
             if (indice == 4)
@@ -55,7 +55,7 @@ namespace pryBarrazaAgendarContactos
             {
                 btnAnterior.Enabled = true;
                 indice--;
-                lblDatosContactos.Text = "Nombre: " + vecNombresLocal[indice] + " Numero: " + vecNumerosLocal[indice];
+                lblDatosContactos.Text = "Nombre: " + vecNombresLocal[indice] + "\n" + "Numero: " + vecNumerosLocal[indice];
                 break;
             }
             if (indice == 0)
